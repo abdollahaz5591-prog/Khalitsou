@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Maison Éclat | مجوهرات وإكسسوارات</title>
+<meta name="description" content="Maison Éclat — مجوهرات وإكسسوارات أنيقة بأسعار مناسبة.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600&display=swap');
+:root{--ink:#171411;--gold:#c49a52;--gold2:#e0c487;--cream:#fbf7f0;--rose:#fff5f3;--muted:#756e65;--line:#eadfd0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Cairo,sans-serif;line-height:1.8}
+a{text-decoration:none;color:inherit}.wrap{max-width:1120px;margin:auto;padding:0 18px}
+header{position:fixed;z-index:20;top:0;left:0;right:0;background:rgba(251,247,240,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+nav{height:70px;display:flex;align-items:center;justify-content:space-between}.brand{font-family:"Playfair Display",serif;font-size:25px;letter-spacing:.5px}.brand b{color:var(--gold)}
+.links{display:flex;gap:25px;font-size:14px}.links a:hover{color:var(--gold)}
+.navbtn{background:var(--ink);color:white;padding:8px 16px;border-radius:30px;font-size:13px}
+.hero{padding:130px 0 70px;min-height:720px;display:flex;align-items:center;background:radial-gradient(circle at 15% 20%,#f0dfc2 0,#fbf7f0 34%,#fbf7f0 100%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.eyebrow{color:var(--gold);font-weight:800;letter-spacing:2px;font-size:13px}
+h1{font-family:"Playfair Display",serif;font-size:clamp(50px,7vw,82px);line-height:1.03;margin:12px 0}h1 span{color:var(--gold)}
+.hero p{color:var(--muted);font-size:17px;max-width:530px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{border:1px solid var(--ink);padding:12px 24px;border-radius:30px;font-weight:700;cursor:pointer}.primary{background:var(--ink);color:#fff}
+.hero-img{height:510px;border-radius:30px;overflow:hidden;background:#eee0d1;box-shadow:0 25px 70px #2b1d0d1f}.hero-img img{width:100%;height:100%;object-fit:cover}
+section{padding:85px 0}.title{text-align:center;margin-bottom:42px}.title small{color:var(--gold);font-weight:800}.title h2{font-family:"Playfair Display",serif;font-size:42px;margin:4px 0}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature{background:white;border:1px solid var(--line);padding:27px;border-radius:20px;text-align:center}.feature .ico{font-size:28px}.feature p{font-size:14px;color:var(--muted);margin:5px 0}
+.products{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}.card{background:white;border:1px solid var(--line);border-radius:24px;overflow:hidden;box-shadow:0 12px 30px #3a27140d}.pic{height:400px;background:#f0e6d9}.pic img{width:100%;height:100%;object-fit:cover}.body{padding:21px}.body h3{margin:0;font-size:21px}.desc{color:var(--muted);font-size:14px;margin:4px 0 8px}.price{font-weight:800;color:var(--gold);font-size:20px;margin:5px 0 15px}.buy{display:block;text-align:center;background:var(--ink);color:#fff;padding:12px;border-radius:28px;font-weight:800}
+.note{margin-top:20px;padding:14px 18px;border-radius:14px;background:#fff8e8;border:1px solid #ecd8aa;color:#6b5937;font-size:13px}
+.story{background:var(--ink);color:#fff}.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.story h2{font-family:"Playfair Display",serif;font-size:48px}.story p{color:#cec6bc}.gold{color:var(--gold2)}
+.order{background:var(--rose)}.orderbox{background:#fff;border:1px solid var(--line);border-radius:25px;padding:35px;max-width:760px;margin:auto;text-align:center}.orderbox h2{font-family:"Playfair Display",serif;font-size:38px;margin:0}.orderbox p{color:var(--muted)}
+.wa{display:inline-block;background:#1f9d55;color:white;padding:13px 27px;border-radius:30px;font-weight:800;margin-top:12px}
+footer{background:#111;color:#aaa;text-align:center;padding:35px 15px;font-size:13px}.flogo{font-family:"Playfair Display",serif;color:#fff;font-size:24px}
+.toast{position:fixed;right:18px;bottom:18px;background:#171411;color:white;padding:12px 17px;border-radius:12px;opacity:0;transform:translateY(12px);transition:.25s;z-index:50}.toast.show{opacity:1;transform:none}
+@media(max-width:780px){.links{display:none}.hero{padding-top:105px}.hero-grid,.story-grid{grid-template-columns:1fr}.hero-img{height:410px}.features,.products{grid-template-columns:1fr}.pic{height:360px}.title h2{font-size:34px}.story h2{font-size:40px}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="brand" href="#home">Maison <b>Éclat</b></a>
+<div class="links"><a href="#home">الرئيسية</a><a href="#collection">المجموعة</a><a href="#about">قصتنا</a><a href="#order">الطلب</a></div>
+<a class="navbtn" href="#collection">تسوقي الآن</a>
+</nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-grid">
+<div>
+<div class="eyebrow">MAISON ÉCLAT · JEWELRY</div>
+<h1>لمسة <span>تألق</span><br>تليق بكِ.</h1>
+<p>اكتشفي مجوهرات وإكسسوارات Maison Éclat المختارة بعناية، بتصاميم أنيقة تمنح إطلالتك لمسة فاخرة وبسيطة في الوقت نفسه.</p>
+<div class="actions"><a class="btn primary" href="#collection">اكتشفي المجموعة ✨</a><a class="btn" href="#order">اطلبي الآن</a></div>
+</div>
+<div class="hero-img"><img src="images/heart-set.jpg" alt="طقم مجوهرات القلوب"></div>
+</div></div></section>
+
+<section><div class="wrap"><div class="title"><small>MAISON ÉCLAT</small><h2>لماذا تختاريننا؟</h2></div>
+<div class="features">
+<div class="feature"><div class="ico">✨</div><h3>أناقة يومية</h3><p>قطع سهلة التنسيق مع إطلالتك اليومية والمناسبات.</p></div>
+<div class="feature"><div class="ico">🎁</div><h3>هدية جميلة</h3><p>اختيار أنيق لمن تحبين، مع عرض جذاب للقطعة.</p></div>
+<div class="feature"><div class="ico">🤍</div><h3>أسعار مناسبة</h3><p>خيارات جميلة بأسعار واضحة ومباشرة.</p></div>
+</div></div></section>
+
+<section id="collection"><div class="wrap"><div class="title"><small>OUR COLLECTION</small><h2>اختاري قطعتك المفضلة</h2></div>
+<div class="products">
+<article class="card"><div class="pic"><img src="images/duck-necklace.jpg" alt="سلسلة البطة"></div><div class="body"><h3>سلسلة البطة 🦢</h3><div class="desc">سلسلة أنيقة بتصميم لطيف، مناسبة كقطعة يومية أو هدية.</div><div class="price">20 درهم</div><a class="buy" href="#order" onclick="selectProduct('سلسلة البطة — 20 درهم')">اطلبي هذه القطعة</a></div></article>
+<article class="card"><div class="pic"><img src="images/heart-set.jpg" alt="طقم القلوب"></div><div class="body"><h3>طقم القلوب ❤️</h3><div class="desc">طقم متناسق بتصميم القلوب، يضم قلادة وأقراطاً وخاتماً وسواراً.</div><div class="price">السعر يُحدد عند الطلب</div><a class="buy" href="#order" onclick="selectProduct('طقم القلوب ❤️')">اطلبي هذه القطعة</a></div></article>
+</div>
+<div class="note">ملاحظة: سعر طقم القلوب لم يظهر في الصور المرسلة، لذلك تركته بدون سعر حتى تزودني بالسعر الصحيح.</div>
+</div></section>
+
+<section class="story" id="about"><div class="wrap"><div class="story-grid">
+<div><div class="gold">OUR STORY</div><h2>Maison Éclat</h2><p>متجر للمجوهرات والإكسسوارات الأنيقة، بهوية هادئة وفاخرة تركز على جمال القطعة وسهولة اختيارها.</p></div>
+<div><p>هدفنا أن تجدي قطعة تشبهك: بسيطة، أنيقة، ومميزة. اخترنا لهذا المتجر تصميماً سريعاً وواضحاً يناسب الهاتف ويقود الزائرة مباشرة إلى المنتج والطلب.</p></div>
+</div></div></section>
+
+<section class="order" id="order"><div class="wrap"><div class="orderbox">
+<h2>جاهزة للطلب؟</h2><p>اختاري المنتج، ثم أرسلي طلبك عبر WhatsApp. أضف رقم WhatsApp الخاص بالمتجر مكان الرقم الموجود في الزر.</p>
+<a class="wa" id="wa" href="https://wa.me/212655911218?text=مرحباً%20Maison%20Éclat%20أرغب%20في%20طلب%20منتج" target="_blank">💬 اطلب عبر WhatsApp</a>
+<div class="note">حالياً الزر تجريبي. أرسل لي رقم WhatsApp الخاص بك وسأضعه في الموقع.</div>
+</div></div></section>
+</main>
+<footer><div class="flogo">Maison Éclat</div><div>مجوهرات وإكسسوارات أنيقة</div><div style="margin-top:8px">© 2026 Maison Éclat</div></footer>
+<div class="toast" id="toast"></div>
+<script>
+let selected='';
+function selectProduct(name){
+ selected=name;
+ const t=document.getElementById('toast');t.textContent='تم اختيار: '+name+' ✨';t.classList.add('show');
+ setTimeout(()=>t.classList.remove('show'),1800);
+ const wa=document.getElementById('wa');
+ wa.href='https://wa.me/212655911218?text='+encodeURIComponent('مرحباً Maison Éclat، أرغب في طلب: '+name);
+}
+</script>
+</body></html>
